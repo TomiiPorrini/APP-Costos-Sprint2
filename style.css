@@ -1,0 +1,15 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.controles{
+    padding: 2rem;
+}
+
+footer{
+    /* background-color:#5B6AE0; */
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
