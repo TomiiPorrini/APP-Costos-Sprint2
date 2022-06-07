@@ -27,12 +27,14 @@ function imprimirContribuyente(nom, precio){
     registro.append(h4);
 }
 
+let totales = document.getElementById('totales');
+let promedio = document.getElementById('promedio');
+
 function precios(){
     let suma = total(gastos);
-    let promedio = suma/(gastos.length);
-    console.log(promedio, typeof(promedio))
-    document.getElementById('totales').innerText = 'Total: $'+suma;
-    document.getElementById('promedio').innerText = 'A cada uno le toca aportar: $'+promedio;
+    let resultado = suma/(gastos.length);
+    totales.innerText = 'Total: $'+suma;
+    promedio.innerText = 'A cada uno le toca aportar: $'+resultado;
 }
 
 function total(array){
@@ -41,5 +43,4 @@ function total(array){
         suma +=parseInt(elemento);
     }
     return suma;
-    
 }
